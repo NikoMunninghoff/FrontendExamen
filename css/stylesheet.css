@@ -1,0 +1,65 @@
+/*     
+    auteur: Niko Munninghoff
+    Aanmaakdatum: 05/06/2024
+    <CSS van de paginas>
+*/
+* 
+{
+    margin: 0;
+    padding: 0;
+}
+/* Font */
+p, h1, h2, h3
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*HOME PAGINA/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.InfoFotoBox
+{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    margin-right: 55rem;
+    margin-bottom: 2rem;
+}
+
+/* Foto album, gemaakt met w3schools tutorial, dus devnotes zijn hier in het engels */
+.FotoAlbum
+{
+    position:absolute;
+    background-color:#759BB7;
+    height: 30rem;
+    width: 40rem;
+
+    border-style:solid;
+    border-color:#678da9;
+    border-width:0.25rem;
+
+    margin-left:5rem;
+}
+/* Sizing photos */
+.FotosHP
+{
+    height: 28rem;
+    width: 38rem;
+    margin: 1rem;
+/* Hides the images by default */ 
+    display: none;
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 1rem;
+    padding: 0.5rem 0.75rem;
+    position: absolute;
+    bottom: 0.4rem;
+    width: 95%;
+    text-align: center;
+    display: none;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    background-color: #759BB7;
+  }

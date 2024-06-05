@@ -21,7 +21,7 @@ HTML van de hoofdpagina-->
     <!-- Menu box -->
     <div class="ParentMenu">
         <a href="index.html">
-            <figure><img src="../img/Maria_logo.png" alt="Logo" class="MenuLogo"></figure>
+            <figure><img src="../img/Maria_logo_transparent.png" alt="Logo" class="MenuLogo"></figure>
         </a>
         <div class="MenuBoxes">
             <a href="informatie.html">
@@ -43,19 +43,25 @@ HTML van de hoofdpagina-->
         <!-- slider -->
         <div class="FotoAlbum">
             <div class="SlideHP">
-                <figure><IMG src="../IMG/woezie.png" alt="Afbeelding 1" class="FotosHP"></figure>
+                <IMG src="../img/kunst1.jpg" alt="Afbeelding 1" class="FotosHP">
+                <div class="text">Turmoil</div>
+                
             </div>
             <div class="SlideHP">
-                <figure><IMG src="../IMG/FA8.jpg" alt="Afbeelding 2" class="FotosHP"></figure>
+                <IMG src="../img/kunst2.png" alt="Afbeelding 2" class="FotosHP">
+                <div class="text">Koe</div>
             </div>
             <div class="SlideHP">
-                <figure><IMG src="../IMG/FA7.webp" alt="Afbeelding 3" class="FotosHP"></figure>
+                <IMG src="../img/kunst3.jpg" alt="Afbeelding 3" class="FotosHP">
+                <div class="text">Bloemen in de wind</div>
             </div>
             <div class="SlideHP">
-                <figure><IMG src="../IMG/FA3.jpg" alt="Afbeelding 4" class="FotosHP"></figure>
+                <IMG src="../img/kunst4.jpg" alt="Afbeelding 4" class="FotosHP">
+                <div class="text">Serenity</div>
             </div>
             <div class="SlideHP">
-                <figure><IMG src="../IMG/FA2.jpg" alt="Afbeelding 5" class="FotosHP"></figure>
+                <IMG src="../img/kunst5.jpg" alt="Afbeelding 5" class="FotosHP">
+                <div class="text">Stadsleven</div>
             </div>
         </div>
     </div>
@@ -68,11 +74,11 @@ HTML van de hoofdpagina-->
                 slideIndex: 0,
                 //The images that are being used
                 slides: [
-                    'woezie.png',
-                    'FA8.jpg',
-                    'FA7.webp',
-                    'FA3.jpg',
-                    'FA2.jpg'
+                    'kunst1.jpg',
+                    'kunst2.png',
+                    'kunst3.jpg',
+                    'kunst4.jpg',
+                    'kunst5.jpg'
                 ]
             },
             mounted() {
@@ -88,6 +94,7 @@ HTML van de hoofdpagina-->
                     // Hide all slides
                     this.slides.forEach((slide, index) => {
                         document.getElementsByClassName('FotosHP')[index].style.display = 'none';
+                        document.getElementsByClassName('text')[index].style.display = 'none';
                     });
         
                     // Increment the slide index
@@ -98,6 +105,7 @@ HTML van de hoofdpagina-->
         
                     // Display the current slide
                     document.getElementsByClassName('FotosHP')[this.slideIndex - 1].style.display = 'block';
+                    document.getElementsByClassName('text')[this.slideIndex - 1].style.display = 'block';
                 }
             }
         });
