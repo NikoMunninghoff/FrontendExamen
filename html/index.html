@@ -16,14 +16,20 @@ HTML van de hoofdpagina-->
     <link rel="stylesheet" href="../css/stylesheet.css">
     <!-- Include Vue.js from CDN -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="../vueJS/script.js"></script>
 </head>
 <body>
     <!-- Menu box -->
     <div class="ParentMenu">
+        <div class="hamburger" id="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
         <a href="index.html">
             <figure><img src="../img/rooienoes_logo_transparent.png" alt="Logo" class="MenuLogo"></figure>
         </a>
-        <div class="MenuBoxes">
+        <div class="MenuBoxes id=menuBox">
             <a href="informatie.html">
                 <div class="MenuButton">Informatie</div>
             </a>

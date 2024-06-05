@@ -99,7 +99,28 @@ p, h1, h2, h3
 {
     font-size: 0.8rem;
 }
-
+/*MEDIA QUERY VOOR RESPONSIVE*/
+@media (max-width: 768px) {
+    .InfoFotoBox {
+        margin-right: 5rem;
+    }
+    .FotoAlbum {
+        width: 25rem;
+        height: 18rem;
+        position: relative;
+    }
+    .FotosHP {
+        width: 23rem;
+        height: 16rem;
+    }
+    .NieuwsBerichtenHome {
+        margin-left: 4rem;
+    }
+    .NieuwsHome {
+        width: 30rem;
+        height: 18rem;
+    }
+}
 /*OVER ONS//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* Info box */
 .KorteInfo

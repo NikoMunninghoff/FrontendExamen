@@ -71,3 +71,33 @@ a
     color:black;
     font-size: 2rem;
 }
+
+/* MEDIA QUEY VOOR RESPONSIVENESS */
+/* Hamburger menu styles */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: 1.5rem;
+}
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+@media (max-width: 768px) {
+    .MenuBoxes {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    .MenuBoxes.active {
+        display: flex;
+    }
+    .hamburger {
+        display: flex;
+    }
+}
