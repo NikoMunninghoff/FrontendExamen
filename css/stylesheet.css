@@ -65,7 +65,7 @@ p, h1, h2, h3
 }
 
 /* Box voor de nieuwsberichten */
-.NieuwsBerichten
+.NieuwsBerichtenHome
 {
     display:flex;
     flex-wrap:wrap;
@@ -75,7 +75,7 @@ p, h1, h2, h3
     margin-right: 3rem;
 }
 
-.NieuwsEen, .NieuwsTwee
+.NieuwsHome
 {
     background-color: #E5DBA3;
     border:solid #ddd085;
@@ -85,15 +85,17 @@ p, h1, h2, h3
     flex-direction: row;
     align-items: center;
 }
-.berichtEen, .berichtTwee{
-    padding: 1rem;
-}
 
-.nieuwsAfbeelding
+.nieuwsAfbeeldingHome
 {
     position:absolute;
     height: 8rem;
     width: 10rem;
+}
+/*Deze word ook bij de pagina nieuws gebruikt*/
+.datumNieuws
+{
+    font-size: 0.8rem;
 }
 
 /*OVER ONS//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -148,7 +150,7 @@ p, h1, h2, h3
 }
 
 
-
+/*CONTACT //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 #textbox
 {
     background-color:#ddd085;
@@ -177,4 +179,43 @@ p, h1, h2, h3
     background-color: #DF9DF6;
     height: 2rem;
     width:4rem;
+}
+
+
+/*NIEUWS//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* Box voor de nieuwsberichten */
+.NieuwsBerichten
+{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    margin-bottom: 2rem;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Nieuws
+{
+    background-color: #E5DBA3;
+    border:solid #ddd085;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 10rem;
+    width: 55rem;
+}
+/*Deze worden ook bij de homepagina gebruikt*/
+.berichtEen, .berichtTwee, .berichtDrie, .berichtVier
+{
+    padding: 1rem;
+    width: 40rem
+}
+
+.nieuwsAfbeelding
+{
+    height: 8rem;
+    width: 10rem;
 }
