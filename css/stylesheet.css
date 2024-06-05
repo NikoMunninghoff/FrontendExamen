@@ -28,12 +28,12 @@ p, h1, h2, h3
 .FotoAlbum
 {
     position:absolute;
-    background-color:#759BB7;
+    background-color:#E5DBA3;
     height: 30rem;
     width: 40rem;
 
     border-style:solid;
-    border-color:#678da9;
+    border-color:#ddd085;
     border-width:0.25rem;
 
     margin-left:5rem;
@@ -61,7 +61,7 @@ p, h1, h2, h3
 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
-    background-color: #759BB7;
+    background-color: #E5DBA3;
 }
 
 /* Box voor de nieuwsberichten */
@@ -77,8 +77,8 @@ p, h1, h2, h3
 
 .Nieuws
 {
-    background-color: #759BB7;
-    border:solid #678da9;
+    background-color: #E5DBA3;
+    border:solid #ddd085;
 }
 .berichtEen{
     padding: 1rem;
