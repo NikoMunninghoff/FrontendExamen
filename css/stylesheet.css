@@ -50,7 +50,7 @@ p, h1, h2, h3
 
 /* Caption text */
 .text {
-    color: #f2f2f2;
+    color: #63458a;
     font-size: 1rem;
     padding: 0.5rem 0.75rem;
     position: absolute;
@@ -204,6 +204,29 @@ p, h1, h2, h3
     width:4rem;
 }
 
+/* Media Query voor 768px */
+@media (max-width: 768px) {
+    #textbox {
+        height: auto; /* Allow the height to adjust based on content */
+        width: 90%; /* Use a percentage width for better responsiveness */
+        margin-bottom: 3rem; /* Adjust margin-bottom for smaller screens */
+    }
+
+    .headercontact {
+        padding-left: 1rem; /* Reduce padding-left for smaller screens */
+    }
+
+    .formContact {
+        padding: 0.5rem; /* Reduce padding for smaller screens */
+    }
+
+    #btnSubmit {
+        height: 2.5rem; /* Slightly increase height for better touch interaction */
+        width: 100%; /* Make the button full width for smaller screens */
+        font-size: 1rem; /* Increase font size for better readability */
+    }
+}
+
 
 /*NIEUWS//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* Box voor de nieuwsberichten */
@@ -241,6 +264,25 @@ p, h1, h2, h3
 {
     height: 8rem;
     width: 10rem;
+}
+
+/* Media Query voor 768px */
+@media (max-width: 768px) {
+    .Nieuws {
+        flex-direction: column;
+        height: auto;
+        width: 90%;
+    }
+
+    .berichtEen, .berichtTwee, .berichtDrie, .berichtVier {
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    .nieuwsAfbeelding {
+        height: 6rem;
+        width: 8rem;
+    }
 }
 
 /*Overzicht///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -345,4 +387,32 @@ p, h1, h2, h3
     width: 100%;
     opacity: 0;
     transition: 0.5s ease;  
+}
+
+/* Media Query voor 768px
+
+Als je op de plaatjes klikt krijg je de namen, leeftijden en functies te zien*/
+@media (max-width: 768px) {
+    .ParentPhotoBox {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .FigureOD, .FigureOD2 {
+        height: 17rem;
+        width: 18rem;
+        margin: 1rem;
+    }
+
+    .FigureOD:hover, .FigureOD2:hover {
+        height: 17rem;
+        width: 18rem;
+        margin: 0.5rem;
+    }
+
+    .textOD {
+        font-size: 1.5rem;
+    }
 }
