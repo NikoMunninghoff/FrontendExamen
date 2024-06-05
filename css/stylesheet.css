@@ -146,3 +146,35 @@ p, h1, h2, h3
     margin-right:0.5rem;
     margin-bottom:1rem;
 }
+
+
+
+#textbox
+{
+    background-color:#ddd085;
+    height: 40rem;
+    width: 30rem;
+
+    border-style:solid;
+    border-color:#DF9DF6;
+    border-width:0.25rem;
+
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 5rem;
+}
+.formContact{
+    padding:1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.headercontact
+{
+    padding-top:1rem;
+    padding-left: 7rem;
+}
+#btnSubmit
+{
+    background-color: #DF9DF6;
+    height: 2rem;
+    width:4rem;
+}

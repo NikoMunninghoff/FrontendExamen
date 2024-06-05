@@ -38,5 +38,26 @@ HTML van de contact pagina-->
                 </a>
             </div>
         </div>
+
+
+        <div id="textbox">
+            <h1 class="headercontact">Stel een vraag!</h1>
+            <form class="formContact"action="/action_page.php">
+                <label for="aanhef">Aanhef:</label><br>
+                <input type="text" id="aanhef" name="aanhef" value=""><br>
+                <label for="naam">Naam:</label><br>
+                <input type="text" id="naam" name="naam" value=""><br>
+                <label for="email">Email adres:</label><br>
+                <input type="text" id="email" name="email" value=""><br>
+                <label for="phone">Telefoonnummer:</label><br>
+                <input type="text" id="phone" name="phone" value=""><br>
+                <label for="message">Vraag/Opmerking:</label><br>
+                <textarea name="message" rows="15" cols="50"></textarea><br>
+                <label for="nieuwsBrief">Aanmelden voor de nieuwsbrief?</label><br>
+                <input type="checkbox" id="nieuwsBrief" name="nieuwsBrief" value=""><br><br>
+                <button id="btnSubmit" type="button" onclick="alert('De vraag is opgestuurd!')">Submit!</button>
+              </form>
+          </div>
+
 </body>
 </html>
