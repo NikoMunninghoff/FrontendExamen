@@ -99,28 +99,55 @@ p, h1, h2, h3
 {
     font-size: 0.8rem;
 }
+
+/* MEDIA QUERY FOR RESPONSIVE AT 1200PX */
+@media (max-width: 1250px) {
+    .InfoFotoBox {
+        margin-right: 35rem;
+        margin-top: 1rem;
+    }
+    .FotoAlbum {
+        width: 30rem;
+        height: 22rem;
+    }
+    .FotosHP {
+        width: 28rem;
+        height: 20rem;
+    }
+    .NieuwsBerichtenHome {
+        margin-left: 30rem;
+    }
+    .NieuwsHome {
+        width: 25rem;
+        height: 19rem;
+    }
+}
+
 /*MEDIA QUERY VOOR RESPONSIVE*/
-@media (max-width: 768px) {
+@media (max-width: 468px) {
     .InfoFotoBox {
         margin-right: 5rem;
     }
     .FotoAlbum {
-        width: 25rem;
+        width: 23rem;
         height: 18rem;
         position: relative;
     }
     .FotosHP {
-        width: 23rem;
+        width: 21rem;
         height: 16rem;
     }
     .NieuwsBerichtenHome {
         margin-left: 4rem;
     }
     .NieuwsHome {
-        width: 30rem;
-        height: 18rem;
+        width: 35rem;
+        height: 26rem;
+        margin-bottom: 2.5rem;
     }
 }
+
+
 /*OVER ONS//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* Info box */
 .KorteInfo
