@@ -75,11 +75,23 @@ p, h1, h2, h3
     margin-right: 3rem;
 }
 
-.Nieuws
+.NieuwsEen, .NieuwsTwee
 {
     background-color: #E5DBA3;
     border:solid #ddd085;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
-.berichtEen{
+.berichtEen, .berichtTwee{
     padding: 1rem;
+}
+
+.nieuwsAfbeelding
+{
+    position:absolute;
+    height: 8rem;
+    width: 10rem;
 }
