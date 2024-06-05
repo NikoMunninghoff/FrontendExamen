@@ -19,31 +19,38 @@ HTML van de hoofdpagina-->
     <script src="../vueJS/script.js"></script>
 </head>
 <body>
-    <!-- Menu box -->
-    <div class="ParentMenu">
-        <div class="hamburger" id="hamburger">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-        <a href="index.html">
-            <figure><img src="../img/rooienoes_logo_transparent.png" alt="Logo" class="MenuLogo"></figure>
-        </a>
-        <div class="MenuBoxes id=menuBox">
-            <a href="informatie.html">
-                <div class="MenuButton">Informatie</div>
+    <div id="app">
+        <!-- Menu box -->
+        <div class="ParentMenu">
+            <div class="hamburger" @click="toggleMenu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>            
+            <a href="index.html">
+                <figure><img src="../img/rooienoes_logo_transparent.png" alt="Logo" class="MenuLogo"></figure>
             </a>
-            <a href="overzicht.html">
-                <div class="MenuButton">Overzicht</div>
-            </a>
-            <a href="nieuws.html">
-                <div class="MenuButton">Nieuws</div>
-            </a>
-            <a href="contact.html">
-                <div class="MenuButton">Contact</div>
-            </a>
+
+            <div class="MenuBoxes" :class="{ active: menuOpen }">
+                <a href="informatie.html">
+                    <div class="MenuButton">Informatie</div>
+                </a>
+                <a href="overzicht.html">
+                    <div class="MenuButton">Overzicht</div>
+                </a>
+                <a href="nieuws.html">
+                    <div class="MenuButton">Nieuws</div>
+                </a>
+                <a href="contact.html">
+                    <div class="MenuButton">Contact</div>
+                </a>
+            </div>
         </div>
     </div>
+    <!-- Include Vue.js from CDN -->
+    <script src="https://unpkg.com/vue@next"></script>
+    <!-- Link to the external JavaScript file -->
+    <script src="../vueJS/app.js"></script>
 
     <div class="InfoFotoBox">
         <!-- slider -->
@@ -162,6 +169,5 @@ HTML van de hoofdpagina-->
             }
         });
     </script>
-   
 </body>
 </html>
