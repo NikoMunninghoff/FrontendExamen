@@ -95,3 +95,54 @@ p, h1, h2, h3
     height: 8rem;
     width: 10rem;
 }
+
+/*OVER ONS//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* Info box */
+.KorteInfo
+{
+    background-color:#E5DBA3;
+    height: 25rem;
+    width: 60rem;
+
+    margin-right: auto;
+    margin-left: auto;
+
+    border-style:solid;
+    border-color:#ddd085;
+    border-width:0.25rem;
+
+    overflow:auto;
+
+}
+#HeaderInfo
+{
+    color:#63458a;
+    font-size: 2.5rem;
+    font-weight: 600;
+
+    margin-top:0.5rem;
+    margin-left:0.5rem;
+    margin-right:0.5rem;
+    margin-bottom:0.5rem;
+}
+.SubHeaderInfo
+{
+    color:#63458a;
+    font-size: 2rem;
+    font-weight: 450;
+
+    margin-top:1rem;
+    margin-left:0.5rem;
+    margin-right:0.5rem;
+    margin-bottom:0.5rem;
+}
+.InfoText
+{
+    font-size: 1rem;
+    font-weight: 450;
+
+    margin-top:0.5rem;
+    margin-left:0.5rem;
+    margin-right:0.5rem;
+    margin-bottom:1rem;
+}

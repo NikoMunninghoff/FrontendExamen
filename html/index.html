@@ -43,54 +43,74 @@ HTML van de hoofdpagina-->
         <!-- slider -->
         <div class="FotoAlbum">
             <div class="SlideHP">
-                <IMG src="../img/kunst1.jpg" alt="Afbeelding 1" class="FotosHP">
-                <div class="text">Turmoil</div>
+                <IMG src="../img/bs2.jpg" alt="Afbeelding 1" class="FotosHP">
+                <div class="text">Speelplein leeftijd 8-12</div>
                 
             </div>
             <div class="SlideHP">
-                <IMG src="../img/kunst2.png" alt="Afbeelding 2" class="FotosHP">
-                <div class="text">Koe</div>
+                <IMG src="../img/bs3.webp" alt="Afbeelding 2" class="FotosHP">
+                <div class="text">Wachten op de ouders!</div>
             </div>
             <div class="SlideHP">
-                <IMG src="../img/kunst3.jpg" alt="Afbeelding 3" class="FotosHP">
-                <div class="text">Bloemen in de wind</div>
+                <IMG src="../img/bs7.jpg" alt="Afbeelding 3" class="FotosHP">
+                <div class="text">Lekker lezen</div>
             </div>
             <div class="SlideHP">
-                <IMG src="../img/kunst4.jpg" alt="Afbeelding 4" class="FotosHP">
-                <div class="text">Serenity</div>
+                <IMG src="../img/bs5.jpg" alt="Afbeelding 4" class="FotosHP">
+                <div class="text">Schone gangen</div>
             </div>
             <div class="SlideHP">
-                <IMG src="../img/kunst5.jpg" alt="Afbeelding 5" class="FotosHP">
-                <div class="text">Stadsleven</div>
+                <IMG src="../img/bs8.jpg" alt="Afbeelding 5" class="FotosHP">
+                <div class="text">Altijd sportief blijven!
+                </div>
             </div>
         </div>
     </div>
 
+    <!--Nieuwsberichten-->
     <div class="NieuwsBerichten">
-        <div class="Nieuws">
+        <div class="NieuwsEen">
             <div class="berichtEen">
-                <h2>
-                    Nieuwe gallerie geopend!
-                </h2>
-                <p>
-                    In Brussels is er op 03/06 een nieuwe gallerie geopend voor de kunstwerken van Maria! Dit is de eerste keer dat ze getoond worden buiten Nederland, dus een erg groot moment voor onze Twentse arties! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati aperiam ad minus quisquam fugiat, nemo deserunt, voluptas unde cupiditate optio magnam quas id esse sed?
+                <a href="nieuws.html">
+                    <h2>
+                        Groep 8 musical voorbereidingen
+                    </h2>
+                </a>
+
+                <p class="datumNieuws">
+                    03/06/2024
                 </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque ad beatae in consectetur dolorem atque autem eos praesentium sunt vitae, nostrum, voluptas iure vero ratione, nobis dolor illo magni laborum animi consequuntur aliquid? Aliquid nisi molestias optio numquam, soluta excepturi commodi nulla ratione est! Culpa quae voluptates impedit provident cupiditate!
+                </p>
+                <div>
+                    <img class="nieuwsAfbeelding" src="../img/bs1.jpg">
+                </div>
             </div>
         </div>
 
-        <div class="Nieuws">
+        <div class="NieuwsTwee">
             <div class="berichtTwee">
-                <h2>
-                    Nieuwe gallerie geopend!
-                </h2>
-                <p>
-                    In Brussels is er op 03/06 een nieuwe gallerie geopend voor de kunstwerken van Maria! Dit is de eerste keer dat ze getoond worden buiten Nederland, dus een erg groot moment voor onze Twentse arties! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati aperiam ad minus quisquam fugiat, nemo deserunt, voluptas unde cupiditate optio magnam quas id esse sed?
+                <a href="nieuws.html">
+                    <h2>
+                        Groep 8 musical voorbereidingen
+                    </h2>
+                </a>
+                <p class="datumNieuws">
+                    25/05/2024
                 </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore vel nobis, voluptatum aperiam doloremque non. Atque amet cupiditate quisquam corrupti porro, dignissimos consequatur obcaecati sint, aliquid odit blanditiis vitae eius tempore sed quas sequi temporibus ipsa facere culpa illo? Animi repellendus nihil, sit tempore illo et dignissimos eaque harum est.
+                </p>
+                <div>
+                    <img  class="nieuwsAfbeelding" src="../img/bs6.jpg">
+                </div>
             </div>
         </div>
 
     </div>
 
+    <!--begin van de vue!-->
     <script>
         //Creates a new vue instance
         new Vue({
@@ -99,11 +119,11 @@ HTML van de hoofdpagina-->
                 slideIndex: 0,
                 //The images that are being used
                 slides: [
-                    'kunst1.jpg',
-                    'kunst2.png',
-                    'kunst3.jpg',
-                    'kunst4.jpg',
-                    'kunst5.jpg'
+                    'bs2.jpg',
+                    'bs3.webp',
+                    'bs7.jpg',
+                    'bs5.jpg',
+                    'bs8.jpg'
                 ]
             },
             mounted() {
