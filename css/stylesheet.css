@@ -84,13 +84,15 @@ p, h1, h2, h3
     display: flex;
     flex-direction: row;
     align-items: center;
+    height: 10rem;
+    width: 55rem;
 }
 
 .nieuwsAfbeeldingHome
 {
-    position:absolute;
-    height: 8rem;
-    width: 10rem;
+    height: 5rem;
+    width: 4rem;
+    padding: 0.2rem;
 }
 /*Deze word ook bij de pagina nieuws gebruikt*/
 .datumNieuws
