@@ -1,0 +1,107 @@
+<!--Auteur: Niko Munninghoff
+Datum: 05/06/2024
+
+HTML van de hoofdpagina-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="../img/Maria_logo.png" type="image/x-icon" alt="Logo van Maria van Gelder">
+    <title>Hoofdpagina</title>
+    <!-- Declaratie tekenset -->
+    <meta lang="UTF-8">
+    <!-- Declaratie viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Link CSS bestand -->
+    <link rel="stylesheet" href="../css/stylesheetMenu.css">
+    <link rel="stylesheet" href="../css/stylesheet.css">
+    <!-- Include Vue.js from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+    <!-- Menu box -->
+    <div class="ParentMenu">
+        <a href="index.html">
+            <figure><img src="../img/Maria_logo.png" alt="Logo" class="MenuLogo"></figure>
+        </a>
+        <div class="MenuBoxes">
+            <a href="informatie.html">
+                <div class="MenuButton">Informatie</div>
+            </a>
+            <a href="overzicht.html">
+                <div class="MenuButton">Overzicht</div>
+            </a>
+            <a href="nieuws.html">
+                <div class="MenuButton">Nieuws</div>
+            </a>
+            <a href="contact.html">
+                <div class="MenuButton">Contact</div>
+            </a>
+        </div>
+    </div>
+
+    <div class="InfoFotoBox">
+        <!-- slider -->
+        <div class="FotoAlbum">
+            <div class="SlideHP">
+                <figure><IMG src="../IMG/woezie.png" alt="Afbeelding 1" class="FotosHP"></figure>
+            </div>
+            <div class="SlideHP">
+                <figure><IMG src="../IMG/FA8.jpg" alt="Afbeelding 2" class="FotosHP"></figure>
+            </div>
+            <div class="SlideHP">
+                <figure><IMG src="../IMG/FA7.webp" alt="Afbeelding 3" class="FotosHP"></figure>
+            </div>
+            <div class="SlideHP">
+                <figure><IMG src="../IMG/FA3.jpg" alt="Afbeelding 4" class="FotosHP"></figure>
+            </div>
+            <div class="SlideHP">
+                <figure><IMG src="../IMG/FA2.jpg" alt="Afbeelding 5" class="FotosHP"></figure>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        //Creates a new vue instance
+        new Vue({
+            el: '#app',
+            data: {
+                slideIndex: 0,
+                //The images that are being used
+                slides: [
+                    'woezie.png',
+                    'FA8.jpg',
+                    'FA7.webp',
+                    'FA3.jpg',
+                    'FA2.jpg'
+                ]
+            },
+            mounted() {
+                //Method to start the slideshow when its called on
+                this.startSlideshow();
+            },
+            methods: {
+                //Starts the slide and shows a new image every 4 seconds
+                startSlideshow() {
+                    setInterval(this.showSlides, 4000);
+                },
+                showSlides() {
+                    // Hide all slides
+                    this.slides.forEach((slide, index) => {
+                        document.getElementsByClassName('FotosHP')[index].style.display = 'none';
+                    });
+        
+                    // Increment the slide index
+                    this.slideIndex++;
+                    if (this.slideIndex > this.slides.length) {
+                        this.slideIndex = 1;
+                    }
+        
+                    // Display the current slide
+                    document.getElementsByClassName('FotosHP')[this.slideIndex - 1].style.display = 'block';
+                }
+            }
+        });
+    </script>
+   
+</body>
+</html>

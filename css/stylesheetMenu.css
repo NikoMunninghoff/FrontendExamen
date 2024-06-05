@@ -1,0 +1,73 @@
+/*     
+    auteur: Niko Munninghoff
+    Aanmaakdatum: 05/06/2024
+
+    <CSS van het menu>
+*/
+
+/*Standaard functies*/
+* 
+{
+    margin: 0;
+    padding: 0;
+}
+a
+{
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*Menu box! :D*/
+.ParentMenu
+{
+    height: 10rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    background-color:#9FBBD0;
+    margin-bottom: 1rem;
+}
+/* Logo! */
+
+.MenuLogo
+{
+    height: 7rem;
+    width: 9rem;
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    align-self: center;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    -webkit-transition: all 0.1s ease-in;
+    -moz-transition: all 0.1s ease-in;
+    transition: all 0.1s ease-in;
+}
+
+.MenuBoxes
+{
+    display: flex;
+    flex-direction: row;
+    align-items: space-evenly;
+}
+
+/* opmaak van de buttons */
+.MenuButton
+{
+    height: 5rem;
+    width: 10rem;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    text-align:center;
+
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background-color:#D9D9D9;
+
+    color:black;
+    font-size: 2rem;
+}
